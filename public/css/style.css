@@ -1,0 +1,397 @@
+
+
+/*-- start Hero ---*/
+section .hero{
+	margin-top: -40px;
+	padding-top: 100px;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background-color: #888;
+	background-repeat:no-repeat ;
+	background-size:cover;
+	cursor: none;
+	}
+	.ani-hero{
+		height: 400px;
+		margin-top: 60px;
+		position: absolute;
+		animation-duration: 3s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+	}
+	.hero .leftSide {
+		animation-name:  leftSide ;
+	}
+	.hero .rightSide {    
+		animation-name: rightSide;
+	}
+	.hero .mid-hero{
+		width: 500px;
+		height: auto;
+		position: absolute;
+		visibility: hidden;
+		margin: 10px calc(50% - 225px) 0;
+		animation-name: middleSide ;
+		animation-duration: 1.6s; 
+		animation-delay: 2.5s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+		z-index: 10;
+	}
+	
+	@keyframes leftSide{
+		0%{
+			opacity: 1;
+			left: -15rem; 
+		}
+
+		50%{
+			opacity: 1;
+		}
+
+		80%{
+			opacity: 1;
+		}
+		
+		99%{
+			opacity: 1;
+			left: 34.3% ;
+		} 
+		100%{
+			opacity: 0;
+
+		}
+	}
+	
+	@keyframes rightSide{
+		0%{
+			opacity: 1;
+			right: -15rem;
+		}
+		50%{
+			opacity: 1;
+		}
+
+		80%{
+			opacity: 1;
+		}
+		
+		99%{
+			opacity: 1;
+			right: 33%; 
+		}
+		100%{
+			opacity: 0;
+			
+		}
+
+	}
+	@keyframes middleSide{
+		from{
+		opacity: 0;
+		}
+		to{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+
+
+/* start style of text*/
+
+.parent {
+	padding-top: 10px;
+	padding-bottom: 70px;
+	background-color:#CACACA ;
+	height:auto;
+	font-size: 20px;
+	font-weight:20px ;
+	font-family:'Bona Nova', serif;
+/*text-align: center;*/
+}
+
+.parent p{
+     writing-mode: vertical-lr;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg) ;
+	margin-right: 1022px;
+	font-size: 35px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 43px;
+}
+
+.container-home{
+	overflow: hidden;
+	width: 600px;
+	margin-top: -261px;
+	margin-left: 173px;
+	margin-right: auto;
+	padding-left:15px;
+	padding-right: 15px;
+}
+
+
+
+
+/*start our actitvites Section*/
+
+.text{
+    margin-top: 60px;
+	margin-bottom: 40px;
+    font-size:50px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+	text-shadow: 1px 1px 2px black, 0 0 25px #ff9800, 0 0 5px #ff9800;
+}
+
+.text span{
+	color: #ff9800;
+	font-size:50px;
+	font-weight: bold;
+}
+
+.our-activites{
+	margin: 50px 0;
+	justify-content: space-evenly;
+}
+
+.home-workshop-event{
+	position: relative;
+	height: auto;
+}
+
+.background {
+	background-image: url("../image/workshopimage.jpg");
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    padding: 0%;
+	margin-bottom: 60px;
+	height: 550px;
+	opacity: 0.5;
+	border-radius: 30px;
+	
+}
+
+.transbox {
+	position: absolute;
+	top: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.transbox p:first-child {
+	margin-top: 5%;
+    font-weight: bold;
+    color: #ff9800;
+	font-size: 50px;
+    text-align: center;
+	text-shadow: 1px 1px 2px black, 0 0 25px #bdb6ad, 0 0 5px #bdb6ad;
+
+}
+.background2{
+    background:url("../image/enentimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+	height: 550px;
+	padding: 0;
+	opacity: 0.5;
+	border-radius: 30px;
+}
+
+.home-workshop-content, 
+.home-event-content{
+	font-size: 20px;
+	font-weight: 500;
+	padding-left: 10%;
+	text-align: center;
+	width: 80%;
+}
+.a-button {
+	position: absolute;
+	bottom:15%;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+.button{
+	color: white;
+    background-color:#ff9a04;;
+    border-radius: 10px;
+    height: 45px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 28px;
+    width: 195px;
+    font-weight: bolder;
+	transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px black, 0 0 20px #bdb6ad, 0 0 4px #bdb6ad;
+
+}
+
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	font-size: 30px;
+	line-height: 28px;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+/*end our actitvites Section*/
+
+/* start exhipition section */
+
+.exhep {
+    overflow: hidden;
+    background-color: #cacaca;
+    margin-bottom: 50px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+
+.exhep .ex_container  {
+	justify-content: space-between;
+}
+
+.exhep h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 38px;
+	margin-bottom:50px ;
+	margin-top:50px ;
+}
+
+.exhep h2 span{
+	color: #ff9800;
+	font-size: 38px;
+
+}
+
+.exhep .ex_container .button {
+	width: 100%;
+    height: 45px;
+    background-color:#ff9a04;;
+    border: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+	outline: none;
+}
+
+.right-photo, .left-photo {
+	width: 100%;
+	height: 100%;
+}
+
+.right-photo{
+    border-top-right-radius: 30px;
+}
+
+.left-photo{
+	border-top-left-radius: 30px;
+}
+
+
+/* end exhipition*/
+
+
+
+
+
+
+
+
+
+
+/* small screen*/
+@media (max-width:768px){
+	.container-home{
+		width: 300px;
+	}
+
+	.our-activites .home-workshop-event {
+		width: 90%;
+	}
+	.home-workshop-event .event {
+        	bottom: 5%;
+	}
+	
+	.exhep .ex_container {
+		display: flex;
+		justify-content: center;
+
+	}
+	.exhep .ex_container .margin-button {
+		margin-bottom: 50px;
+	}
+		
+	.right-photo{
+		border-top-right-radius: 30px;
+		border-top-left-radius: 30px;
+	}
+
+	.left-photo{
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border-top-left-radius: 0px;
+
+
+	}
+}
+
+@media (min-width:768px){
+	.container-home{
+	width: 500px;
+	}
+}
+
+	/*medium*/
+
+	@media (min-width:992px){
+	.container-home{
+	width: 600px;
+	}
+}
+
+	/*large*/
+
+@media (min-width:1200px){
+	.container-home{
+	width:1000px;
+	}
+}
+
+/* end style of text*/

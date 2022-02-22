@@ -1,0 +1,142 @@
+
+
+/*-- start contact us-hero --*/ /*-- Moamen Gamal --*/
+
+.contact-us-hero{
+	width: 100%;
+	height: 450px;
+	background-color: #696967;
+}
+.contact-us-hero .contact-us-words{
+	display: flex;
+	width: 100%;
+	height: 450px;
+	align-items: center;
+	justify-content: center;
+	color:rgb(255, 255, 255);
+}
+.contact-us-hero .contact-word{
+	border: 5px solid white;
+	font-size: 60px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+}
+.contact-icons{
+	height: 250px;
+	background-color: #cacaca;
+	border-radius: 40px 40px 0 0;
+}
+.contact-icons .contact-icon{
+	margin-top: 80px;
+	text-align: center;
+}
+/*-- end contact us-hero and icons--*/
+ 
+.contact-img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-image: url('map.png');
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+form.contact-Us{
+	height: 800px;
+	margin-bottom: 100px;
+	padding: 10px 10%;
+	position: absolute;
+	top: 20px;
+}
+
+.contact-Us div{
+	margin-top: 10px ;
+	width: 80% ;
+	margin-left: 10% ;
+} 
+.contact-Us .mess{
+	margin-left: 0% ;
+	
+}
+
+
+
+	
+.main1{
+	width: 80%;
+	 margin: 10px;
+	 background-color: #CACACA;
+		color:black; 
+	 border: none;
+	 height: 60px;
+	 border-radius: 20px;
+	 margin-left: 100px;
+	 padding: 15px;
+	 margin-top: 50px;
+	 
+	}
+
+.content{
+	display: block;
+	  float: left;
+	margin: auto;
+	margin-top: 0%;
+}
+.mess{
+
+	display: block;	
+	float: right;
+}
+.main2,.main3{  
+	width: 80%;
+	background-color: #CACACA;
+	color:black; 
+	border: none;
+	border-radius: 20px;
+	
+	padding: 15px;
+	margin-top: 50px;
+
+}
+.main2{height: 180px;}
+.main3{
+	cursor: pointer;
+	background-color: #FF9800;
+	color: #FFFFFF;	
+}
+.main3:hover{ background: #e6a84b;	}
+  
+
+
+
+
+
+@media only screen and (max-width: 767px){
+	.form-contact{
+		width: 104%;
+		height: 750px;
+		padding-top: 0%;
+		padding-right: 4%;
+
+	}
+
+	.content{
+		display: block;
+		float: none;
+		margin-left:10px;
+		padding-left: 0%;
+		margin-right: 13%;
+
+  }
+  
+  .mess{
+		margin-left:20%;
+		margin-right: 0px;
+		display: block;	
+		float: none;
+		padding-right: 0%;
+  }	
+}  
