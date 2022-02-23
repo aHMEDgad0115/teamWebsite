@@ -36,3 +36,11 @@ Route::get('/sponsers', function () {  return view('sponsers');  })->name('spons
 Route::get('/workshop', function () {  return view('workshop');  })->name('workshop');
 
 Route::get('/Workshops', function () {  return view('Workshops');  })->name('Workshops');
+
+
+//backend routes
+
+
+Route::get('admin', function () {
+    return view('backend.admin');
+})->name('admin.index');
